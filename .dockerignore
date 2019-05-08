@@ -1,0 +1,24 @@
+# Node
+node_modules
+npm-debug.log
+
+# GIT
+.git
+.gitignore
+
+# Build
+LICENSE
+README.md
+build
+
+# Docker
+Dockerfile*
+docker-compose.yml
+.dockerignore
+
+# OS
+.DS_Store
+
+# CI/CD
+.travis.yml
+.vscode

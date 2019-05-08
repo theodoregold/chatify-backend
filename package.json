@@ -1,0 +1,52 @@
+{
+  "name": "chat-backend",
+  "description": "",
+  "version": "1.0.0",
+  "author": {
+    "name": "Teodors Zeltiņš",
+    "email": "teodors.zeltins@gmail.com"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "eslint": "eslint src/. test/. --config .eslintrc",
+    "start": "nodemon src/ | npx pino-pretty",
+    "start:live": "node src/",
+    "test": "mocha test/ --recursive",
+    "test:coverage": "nyc mocha"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-pino-logger": "^4.0.0",
+    "express-useragent": "^1.0.12",
+    "helmet": "^3.16.0",
+    "ioredis": "^4.9.3",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.0.2",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.19",
+    "multer": "^1.4.1",
+    "pino": "^5.12.3",
+    "serve-favicon": "^2.5.0",
+    "uuid": "^3.3.2",
+    "validate.js": "^0.12.0",
+    "winston": "^3.2.1",
+    "ws": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.10",
+    "nyc": "^13.3.0",
+    "pino-pretty": "^3.0.0"
+  }
+}
