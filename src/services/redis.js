@@ -1,6 +1,8 @@
 const Redis = require("ioredis");
 
-const redis = new Redis();
+const CONFIG = require("../../env");
+
+const redis = new Redis(CONFIG.redis);
 
 
 
